@@ -1,0 +1,214 @@
+<html>
+
+<head>
+	<title>Simple web Development Template</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		
+
+		.center {
+			text-align: center;
+		}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "logo1.jpeg"><p style="color:white;"><b>JUHI</b>KARN</p>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<li><a href="mywebsite.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="blog.html">Blog</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+ <li><a href="https://instagram.com/_juhikarn_?igshid=YmMyMTA2M2Y="><img src="instalogo1.png"></a></li>
+<li><a href="https://www.facebook.com/profile.php?id=100055604177010"><img src="facebook.png"></a></li>
+<li><a href="https://www.linkedin.com/in/juhi-kumari-9ab164216"><img src="linkden3.png"></a></li>
+<li><a href="https://twitter.com/JuhiKarn4?t=h4jSreghemdv8_OdMu-R0w&s=08"><img src="twit2.png"></a></li>
+                       
+
+      
+		</ul>
+
+		
+	</nav>
+
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2 style="color:blue;">Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src= "juhicontact.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+<option value="india">india</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
